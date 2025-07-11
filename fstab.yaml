@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p142404-e1461571.adobeaemcloud.com/bin/franklin.delivery/ajaniadobe/WKND/main"
+    url: "https://author-p142404-e1461571.adobeaemcloud.com/bin/franklin.delivery/ajaniadobe/wknd/main"
     type: "markup"
     suffix: ".html"
