@@ -1,10 +1,13 @@
 {
   "mappings": [
-    "/content/synopsys-demo/:/",
+    "/content/synopsys-demo/language-masters/en/:/",
     "/content/synopsys-demo/configuration:/.helix/config.json",
     "/content/synopsys-demo/metadata:/metadata.json",
     "/content/synopsys-demo/redirects:/redirects.json",
+    "/content/synopsys-demo/language-masters/placeholders:/language-masters/placeholders.json",
     "/content/synopsys-demo/language-masters/en/placeholders:/language-masters/en/placeholders.json",
+    "/content/synopsys-demo/language-masters/en/placeholders:/en/placeholders.json",
+    "/content/synopsys-demo/placeholders:/placeholders.json",
     "/content/synopsys-demo.resource/language-masters/en/query-index.json:/en/query-index.json"
   ],
   "includes": [
