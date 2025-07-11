@@ -1,16 +1,16 @@
 {
   "mappings": [
-    "/content/experian-demo/language-masters/en/:/",
-    "/content/experian-demo/configuration:/.helix/config.json",
-    "/content/experian-demo/metadata:/metadata.json",
-    "/content/experian-demo/redirects:/redirects.json",
-    "/content/experian-demo/language-masters/placeholders:/language-masters/placeholders.json",
-    "/content/experian-demo/language-masters/en/placeholders:/language-masters/en/placeholders.json",
-    "/content/experian-demo/language-masters/en/placeholders:/en/placeholders.json",
-    "/content/experian-demo/placeholders:/placeholders.json",
-    "/content/experian-demo.resource/language-masters/en/query-index.json:/en/query-index.json"
+    "/content/synopsys-demo/language-masters/en/:/",
+    "/content/synopsys-demo/configuration:/.helix/config.json",
+    "/content/synopsys-demo/metadata:/metadata.json",
+    "/content/synopsys-demo/redirects:/redirects.json",
+    "/content/synopsys-demo/language-masters/placeholders:/language-masters/placeholders.json",
+    "/content/synopsys-demo/language-masters/en/placeholders:/language-masters/en/placeholders.json",
+    "/content/synopsys-demo/language-masters/en/placeholders:/en/placeholders.json",
+    "/content/synopsys-demo/placeholders:/placeholders.json",
+    "/content/synopsys-demo.resource/language-masters/en/query-index.json:/en/query-index.json"
   ],
   "includes": [
-    "/content/experian-demo/"
+    "/content/synopsys-demo/"
   ]
 }
