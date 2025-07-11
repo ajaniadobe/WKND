@@ -2,8 +2,8 @@
 
 
 ## Environments
-- Preview: https://main--wknd--aemxsc.aem.page/
-- Live: https://main--wknd--aemxsc.aem.live/
+- Preview: https://main--WKND--ajaniadobe.aem.page/
+- Live: https://main--WKND--ajaniadobe.aem.live/
 
 ## Documentation
 
