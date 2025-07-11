@@ -2,8 +2,8 @@
 
 
 ## Environments
-- Preview: https://main--WKND--ajaniadobe.aem.page/
-- Live: https://main--WKND--ajaniadobe.aem.live/
+- Preview: https://main--wknd--ajaniadobe.aem.page/
+- Live: https://main--wknd--ajaniadobe.aem.live/
 
 ## Documentation
 
