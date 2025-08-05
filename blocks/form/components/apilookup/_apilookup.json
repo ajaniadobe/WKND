@@ -28,20 +28,22 @@
                   "true"
                 ]
               },
-              "children": [
-                {
-                  "name": "companyname",
-                  "resourceType": "core/fd/components/form/textinput/v1/textinput",
+              "companyname": {
+                "name": "companyname",
+                "resourceType": "core/fd/components/form/textinput/v1/textinput",
+                "template": {
                   "jcr:title": "Company Name",
                   "fieldType": "text-input"
-                },
-                {
-                  "name": "dunsnumber",
-                  "resourceType": "core/fd/components/form/textinput/v1/textinput",
+                }
+              },
+              "dunsnumber": {
+                "name": "dunsnumber",
+                "resourceType": "core/fd/components/form/textinput/v1/textinput",
+                "template": {
                   "jcr:title": "DUNS Number",
                   "fieldType": "text-input"
                 }
-              ]
+              }
             }
           }
         }
