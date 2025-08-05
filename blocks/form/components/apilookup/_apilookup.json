@@ -6,31 +6,11 @@
       "plugins": {
         "xwalk": {
           "page": {
-            "resourceType": "core/fd/components/form/panelcontainer/v1/panelcontainer",
+            "resourceType": "core/fd/components/form/textinput/v1/textinput",
             "template": {
               "jcr:title": "API Lookup",
-              "fieldType": "panel",
-              "fd:viewType": "apilookup",
-              "text": {
-                "value": "Text related to the API lookup goes here.",
-                "sling:resourceType": "core/fd/components/form/text/v1/text",
-                "fieldType": "plain-text",
-                "textIsRich": true
-              },
-              "companyname": {
-                "resourceType": "core/fd/components/form/textinput/v1/textinput",
-                "jcr:title": "Company Name",
-                "fieldType": "plain-text",
-                "fd:viewType": "companyname",
-                "enabled": true,
-                "visible": true
-              },
-              "dunsnumber": {
-                "value": "This is where the DUNS number will be.",
-                "sling:resourceType": "core/fd/components/form/text/v1/text",
-                "fieldType": "plain-text",
-                "textIsRich": true
-              }
+              "fieldType": "text-input",
+              "fd:viewType": "apilookup"
             }
           }
         }
