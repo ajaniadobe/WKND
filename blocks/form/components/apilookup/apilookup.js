@@ -51,11 +51,11 @@ class ApiLookup {
 
   handleSelectionChanged() {
     const inputField = this.fieldDiv.querySelector('input[type="text"]');
-    const dunsNumberInput = this.fieldDiv.querySelector('#plain-text-wrapper');
+    var dunsNumberInput = this.fieldDiv.querySelector('#dunsnumber');
 
     inputField.addEventListener('selectionchange', () => {
       if (!dunsNumberInput) {
-        const dunsNumberInput = document.createElement('input');
+        dunsNumberInput = document.createElement('input');
         dunsNumberInput.disabled = true;
         dunsNumberInput.id = 'dunsnumber';
         inputField.insertAdjacentElement('afterend', dunsNumberInput);
