@@ -20,7 +20,7 @@
               "companyname": {
                 "resourceType": "core/fd/components/form/textinput/v1/textinput",
                 "jcr:title": "Company Name",
-                "fieldType": "text-input",
+                "fieldType": "plain-text",
                 "fd:viewType": "companyname",
                 "enabled": true,
                 "visible": true
