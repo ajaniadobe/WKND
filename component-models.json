@@ -5961,12 +5961,6 @@
                 "value": "12"
               }
             ]
-          },
-          {
-            "component": "boolean",
-            "name": "showLink",
-            "label": "Replace consent text with weblink(s)?",
-            "valueType": "boolean"
           }
         ]
       },
