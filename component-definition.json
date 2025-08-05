@@ -831,21 +831,10 @@
                   "fieldType": "panel",
                   "fd:viewType": "apilookup",
                   "text": {
-                    "value": "Text related to the API lookup go here.",
+                    "value": "Text related to the API lookup goes here.",
                     "sling:resourceType": "core/fd/components/form/text/v1/text",
                     "fieldType": "plain-text",
                     "textIsRich": true
-                  },
-                  "approvalcheckbox": {
-                    "name": "approvalcheckbox",
-                    "jcr:title": "I agree to the terms & conditions.",
-                    "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
-                    "fieldType": "checkbox",
-                    "required": true,
-                    "type": "string",
-                    "enum": [
-                      "true"
-                    ]
                   },
                   "companyname": {
                     "resourceType": "core/fd/components/form/textinput/v1/textinput",

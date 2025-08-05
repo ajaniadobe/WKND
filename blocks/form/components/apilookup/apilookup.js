@@ -23,12 +23,6 @@ class ApiLookup {
     if (helpText) {
       this.fieldDiv.append(helpText);
     }
-    if (!textWrapper) { // rendition does not have a plain-text-wrapper => link rendition of apilookup
-      // eslint-disable-next-line no-console
-      console.debug('No plain-text found in apilookup field. Assuming Link based rendition and Skipping decoration.');
-      this.fieldDiv.classList.add('link');
-      return;
-    }
     textWrapper.classList.add(textDecorationClass);
     const intersection = document.createElement('div');
     intersection.classList.add(textIntersectionClass);
@@ -55,6 +49,6 @@ class ApiLookup {
   }
 }
 export default async function decorate(apilookupDiv, fieldJson) {
-  const apilookup = new TermsAndConditions(apilookupDiv, fieldJson);
+  const apilookup = new ApiLookup(apilookupDiv, fieldJson);
   return apilookup.getfieldDiv();
 }
