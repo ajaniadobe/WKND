@@ -52,12 +52,6 @@ class ApiLookup {
   handleSelectionChanged() {
     const inputField = this.fieldDiv.querySelector('input[type="text"]');
     const dunsNumberInput = this.fieldDiv.querySelector('#plain-text-wrapper');
-    if (!textWrapper) { // rendition does not have a plain-text-wrapper => link rendition of TnC
-      // eslint-disable-next-line no-console
-      console.debug('No plain-text found in TnC field. Assuming Link based rendition and Skipping decoration.');
-      this.fieldDiv.classList.add('link');
-      return;
-    }
 
     inputField.addEventListener('selectionchange', () => {
       if (!dunsNumberInput) {
