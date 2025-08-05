@@ -28,6 +28,7 @@ class ApiLookup {
     intersection.classList.add(textIntersectionClass);
     textWrapper.appendChild(intersection);
     this.handleScroll();
+    this.handleSelectionChanged();
   }
 
   handleScroll() {
@@ -46,6 +47,19 @@ class ApiLookup {
       });
       io.observe(intersection);
     }
+  }
+
+  handleSelectionChanged() {
+    const inputField = fieldDiv.querySelector('input[type="text"]');
+
+    inputField.addEventListener('selectionchange', () => {
+      const dunsNumberInput = document.createElement('input');
+      dunsNumberInput.disabled = true;
+      dunsNumberInput.id = 'dunsnumber';
+      dunsNumberInput.value = 'dunsnumber';
+      inputField.insertAdjacentElement('afterend', dunsNumberInput);
+      console.log("Selection changed:" + inputField.value);
+    });
   }
 }
 export default async function decorate(apilookupDiv, fieldJson) {
