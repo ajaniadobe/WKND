@@ -28,26 +28,20 @@
                   "true"
                 ]
               },
-              "companyname": {
-                "resourceType": "core/fd/components/form/textinput/v1/textinput",
-                "template": {
+              "children": [
+                {
+                  "name": "companyname",
+                  "resourceType": "core/fd/components/form/textinput/v1/textinput",
                   "jcr:title": "Company Name",
-                  "fieldType": "text-input",
-                  "fd:viewType": "companyname",
-                  "enabled": true,
-                  "visible": true
-                }
-              },
-              "dunsnumber": {
-                "resourceType": "core/fd/components/form/textinput/v1/textinput",
-                "template": {
+                  "fieldType": "text-input"
+                },
+                {
+                  "name": "dunsnumber",
+                  "resourceType": "core/fd/components/form/textinput/v1/textinput",
                   "jcr:title": "DUNS Number",
-                  "fieldType": "text-input",
-                  "fd:viewType": "dunsnumber",
-                  "enabled": false,
-                  "visible": false
+                  "fieldType": "text-input"
                 }
-              }
+              ]
             }
           }
         }
