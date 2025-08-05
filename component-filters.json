@@ -52,7 +52,7 @@
       "dm-asset",
       "dm-template",
       "image",
-      "text",      
+      "text",
       "title",
       "video",
       "separator"
@@ -61,6 +61,7 @@
   {
     "id": "form",
     "components": [
+      "apilookup",
       "captcha",
       "checkbox",
       "checkbox-group",
