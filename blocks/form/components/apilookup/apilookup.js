@@ -51,13 +51,22 @@ class ApiLookup {
 
   handleSelectionChanged() {
     const inputField = this.fieldDiv.querySelector('input[type="text"]');
+    const dunsNumberInput = this.fieldDiv.querySelector('#plain-text-wrapper');
+    if (!textWrapper) { // rendition does not have a plain-text-wrapper => link rendition of TnC
+      // eslint-disable-next-line no-console
+      console.debug('No plain-text found in TnC field. Assuming Link based rendition and Skipping decoration.');
+      this.fieldDiv.classList.add('link');
+      return;
+    }
 
     inputField.addEventListener('selectionchange', () => {
-      const dunsNumberInput = document.createElement('input');
-      dunsNumberInput.disabled = true;
-      dunsNumberInput.id = 'dunsnumber';
-      dunsNumberInput.value = 'dunsnumber';
-      inputField.insertAdjacentElement('afterend', dunsNumberInput);
+      if (!dunsNumberInput) {
+        const dunsNumberInput = document.createElement('input');
+        dunsNumberInput.disabled = true;
+        dunsNumberInput.id = 'dunsnumber';
+        inputField.insertAdjacentElement('afterend', dunsNumberInput);
+      }
+      dunsNumberInput.value = 'DUNS number for ' + inputField.value;
       console.log("Selection changed:" + inputField.value);
     });
   }
