@@ -18,16 +18,16 @@ class ApiLookup {
   }
 
   decorate() {
-    const textWrapper = this.fieldDiv.querySelector('.plain-text-wrapper');
+    // const textWrapper = this.fieldDiv.querySelector('.text-wrapper');
     const helpText = this.fieldDiv.querySelector('.field-description');
     if (helpText) {
       this.fieldDiv.append(helpText);
     }
-    textWrapper.classList.add(textDecorationClass);
-    const intersection = document.createElement('div');
-    intersection.classList.add(textIntersectionClass);
-    textWrapper.appendChild(intersection);
-    this.handleScroll();
+    // textWrapper.classList.add(textDecorationClass);
+    // const intersection = document.createElement('div');
+    // intersection.classList.add(textIntersectionClass);
+    // textWrapper.appendChild(intersection);
+    // this.handleScroll();
     this.handleSelectionChanged();
   }
 
