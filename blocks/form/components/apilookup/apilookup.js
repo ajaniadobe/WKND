@@ -50,18 +50,22 @@ class ApiLookup {
   }
 
   handleSelectionChanged() {
+    var searchtimer;
     const inputField = this.fieldDiv.querySelector('input[type="text"]');
     var dunsNumberInput = this.fieldDiv.querySelector('#dunsnumber');
 
     inputField.addEventListener('selectionchange', () => {
-      if (!dunsNumberInput) {
+      if (!dunsNumberInput || dunsNumberInput.value) {
         dunsNumberInput = document.createElement('input');
         dunsNumberInput.disabled = true;
         dunsNumberInput.id = 'dunsnumber';
         inputField.insertAdjacentElement('afterend', dunsNumberInput);
       }
-      dunsNumberInput.value = 'DUNS number for ' + inputField.value;
-      console.log("Selection changed:" + inputField.value);
+      clearTimeout(searchtimer); // <--- The solution is here
+      searchtimer = setTimeout(() => {
+        dunsNumberInput.value = 'DUNS number for ' + inputField.value;
+        console.log("Selection changed:" + inputField.value);
+      }, 1000);
     });
   }
 }
