@@ -12,7 +12,7 @@
               "fieldType": "panel",
               "fd:viewType": "dunslookup",
               "text": {
-                "value": "Text related to the API lookup here.",
+                "value": "Text related to the API lookup goes here.",
                 "sling:resourceType": "core/fd/components/form/text/v1/text",
                 "fieldType": "plain-text",
                 "textIsRich": true
@@ -20,18 +20,13 @@
               "companyname": {
                 "resourceType": "core/fd/components/form/textinput/v1/textinput",
                 "jcr:title": "Company Name",
-                "fieldType": "text-input",
-                "fd:viewType": "companyname",
-                "enabled": true,
-                "visible": true
+                "fieldType": "text-input"
               },
               "dunsnumber": {
-                "resourceType": "core/fd/components/form/textinput/v1/textinput",
-                "jcr:title": "DUNS Number",
-                "fieldType": "text-input",
-                "fd:viewType": "dunsnumber",
-                "enabled": false,
-                "visible": false
+                "value": "This is where the DUNS number will be.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
               }
             }
           }
