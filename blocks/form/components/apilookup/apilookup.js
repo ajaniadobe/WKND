@@ -63,7 +63,7 @@ class ApiLookup {
       }
       clearTimeout(searchtimer); // <--- The solution is here
       searchtimer = setTimeout(() => {
-        dunsNumberInput.value = 'DUNS number for ' + inputField.value;
+        dunsNumberInput.value = 'DUNS number for ' + inputField.value + ' = ' + inputField.value.hashCode();
         console.log("Selection changed:" + inputField.value);
       }, 1000);
     });
