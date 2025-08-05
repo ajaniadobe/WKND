@@ -50,7 +50,7 @@ class ApiLookup {
   }
 
   handleSelectionChanged() {
-    const inputField = fieldDiv.querySelector('input[type="text"]');
+    const inputField = this.fieldDiv.querySelector('input[type="text"]');
 
     inputField.addEventListener('selectionchange', () => {
       const dunsNumberInput = document.createElement('input');
