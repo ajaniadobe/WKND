@@ -27,7 +27,21 @@
                 "sling:resourceType": "core/fd/components/form/text/v1/text",
                 "fieldType": "plain-text",
                 "textIsRich": true
-              }
+              },
+              "children": [
+                {
+                  "resourceType": "core/fd/components/form/textinput/v1/textinput",
+                  "fieldType": "text-input",
+                  "jcr:title": "Enter your company",
+                  "fd:model": "company"
+                },
+                {
+                  "resourceType": "core/fd/components/form/textinput/v1/textinput",
+                  "fieldType": "text-input",
+                  "jcr:title": "Autofill DUNS number",
+                  "fd:model": "duns"
+                }
+              ]
             }
           }
         }
