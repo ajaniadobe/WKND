@@ -20,8 +20,8 @@
   - Template contains placeholder blocks with various styling options
 
 ## Environments
-- Preview: https://main--wknd--aemxsc.aem.page/
-- Live: https://main--wknd--aemxsc.aem.live/
+- Preview: https://main--wknd--ajaniadobe.aem.page/
+- Live: https://main--wknd--ajaniadobe.aem.live/
 
 ## Documentation
 Adobe Internal: [Quick HowTo](https://adobe-my.sharepoint.com/:w:/p/kmrobin/ESzDGcEecKJAsaLws8Vh6FkBS8JVApQG6YrmyESlufHP3A?e=nL2bYY) 
