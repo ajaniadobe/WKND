@@ -11,6 +11,7 @@
   ],
   "includes": [
     "/content/wknd-universal/",
-    "/content/dam/wknd-universal/"
+    "/content/dam/wknd-universal/",
+    "/content/forms/"
   ]
 }
