@@ -28,7 +28,7 @@
   --light-color: var(--brand-light-color, #dcdcdc);
   --text-color: var(--brand-text-color, #131313);
   --text-light: var(--brand-light-text-color, #ffffff);
-  --text-disabled:rgb(113, 113, 113);
+  --text-disabled: rgb(113, 113, 113);
   --link-color: var(--brand-link-color, #131313);
   --link-hover-color: var(--brand-link-hover-color, #ffc719);
   --main-accent-color: var(--brand-theme-color, #ffc719);
@@ -104,7 +104,7 @@
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+@media (width >=900px) {
   :root {
     /* body sizes */
     --body-font-size-m: 18px;
@@ -126,7 +126,7 @@
   Tab: 768px - 1023px
   Mobile: <= 767px
 */
-@media (width >= 768px) {
+@media (width >=768px) {
   :root {
     /** Measuring impact card paragraph variables **/
     --body-indicator-paragraph: 12px;
@@ -207,7 +207,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
   :root {
     /** Measuring impact card paragraph variables **/
     --body-indicator-paragraph: 12px;
@@ -307,17 +307,21 @@ body.appear {
   display: block;
   overflow-x: hidden;
 }
+
 body.gray-theme {
   filter: grayscale(100%);
 }
+
 body.red-theme {
   --link-hover-color: #ff0000;
   --main-accent-color: #ff0000;
 }
+
 body.blue-theme {
   --link-hover-color: #0000ff;
   --main-accent-color: #0000ff;
 }
+
 body.green-theme {
   --link-hover-color: #00ff00;
   --main-accent-color: #00ff00;
@@ -404,7 +408,7 @@ pre {
   white-space: pre;
 }
 
-main > div {
+main>div {
   margin: 40px 16px;
 }
 
@@ -417,7 +421,9 @@ button {
 
 /* links */
 /* buttons */
-a, a:any-link, a.button:any-link,
+a,
+a:any-link,
+a.button:any-link,
 button {
   display: inline-block;
   padding: 0;
@@ -438,7 +444,9 @@ button {
   white-space: nowrap;
   text-decoration: none;
 }
-a::after, a.button::after {
+
+a::after,
+a.button::after {
   font-family: 'Font Awesome 5 Solid';
   content: "\f105";
   color: var(--link-color);
@@ -454,6 +462,7 @@ a::after, a.button::after {
   padding: 1px 10px;
   cursor: pointer;
 }
+
 a:hover,
 a:focus,
 a.button:hover,
@@ -462,6 +471,7 @@ a.button:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+
 a:hover::after,
 a:focus::after,
 a.button:hover::after,
@@ -474,6 +484,7 @@ button:disabled:hover {
   color: var(--text-disabled);
   cursor: unset;
 }
+
 button:disabled::after,
 button:disabled:hover::after {
   color: var(--text-disabled);
@@ -509,37 +520,42 @@ main img {
 /* Image Hover Effect Shine - start */
 main picture {
   display: block;
-	position: relative;
+  position: relative;
   overflow: hidden;
 }
+
 main picture::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 111;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 111;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
 }
+
 main picture:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
 }
+
 @-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
+  100% {
+    left: 125%;
+  }
 }
+
 @keyframes shine {
-	100% {
-		left: 125%;
-	}
+  100% {
+    left: 125%;
+  }
 }
+
 /* Image Hover Effect Shine - end */
 
 
@@ -555,54 +571,64 @@ main {
   -webkit-perspective: 1px;
   perspective: 1px;
 }
-main .hero-container {
+
+/*main .hero-container {
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   padding: 0;
   margin: -180px 0 180px !important;
-}
+}*/
 main .cards-container {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.adobe-ue-edit header, .adobe-ue-preview header {
+
+.adobe-ue-edit header,
+.adobe-ue-preview header {
   position: initial;
 }
-.adobe-ue-edit main, .adobe-ue-preview main {
+
+.adobe-ue-edit main,
+.adobe-ue-preview main {
   height: initial;
   perspective: initial;
   overflow: initial;
   min-height: 100px;
 }
-.adobe-ue-edit main .hero-container, .adobe-ue-preview main .hero-container {
+
+.adobe-ue-edit main .hero-container,
+.adobe-ue-preview main .hero-container {
   margin: initial !important;
   transform: initial;
 }
-.adobe-ue-edit main .cards-container, .adobe-ue-preview main .cards-container {
+
+.adobe-ue-edit main .cards-container,
+.adobe-ue-preview main .cards-container {
   transform: initial;
 }
+
 /* Parallax effect - End */
 
 
 
 /* sections */
-main > .section {
+main>.section {
   margin: 40px 0;
   min-height: 50px;
 }
 
-main > .section > div {
+main>.section>div {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
 }
 
-main > .section:first-of-type {
+main>.section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
+@media (width >=900px) {
+  main>.section>div {
     padding: 0 32px;
   }
 }
@@ -617,7 +643,7 @@ main .section.highlight {
 
 main .section[data-sec-spacing="section-none"] {
   padding-top: var(--spacing-none);
-  margin:0;
+  margin: 0;
 }
 
 main .section[data-sec-spacing="section-xtiny"] {
@@ -670,7 +696,7 @@ main .section[data-sec-spacing="section-xhuge"] {
 
 main .section[data-sec-spacing-bottom="section-none"] {
   padding-bottom: var(--spacing-none);
-  margin:0;
+  margin: 0;
 }
 
 main .section[data-sec-spacing-bottom="section-tiny"] {
@@ -725,7 +751,8 @@ main .section[data-sec-full-width="true"] {
   width: 100%;
   max-width: 100%;
 }
-main > .section[data-sec-full-width="true"] > div {
+
+main>.section[data-sec-full-width="true"]>div {
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -736,14 +763,17 @@ main > .section[data-sec-full-width="true"] > div {
 main .section.bg-default {
   background-color: var(--background-color);
 }
-main .section.bg-theme {  
+
+main .section.bg-theme {
   background-color: var(--main-accent-color);
   color: var(--text-color);
 }
+
 main .section.bg-dark {
   background-color: var(--dark-color);
-  color: var(--text-light); 
+  color: var(--text-light);
 }
+
 main .section.bg-light {
   background-color: var(--light-color);
   color: var(--text-color);
@@ -759,9 +789,9 @@ main .section.bg-light {
     --body-font-size-m: 18px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 14px;
-    
+
     --heading-font-size-xxl: 40px;
-    --heading-font-size-xl: 34px; 
+    --heading-font-size-xl: 34px;
     --heading-font-size-l: 28px;
     --heading-font-size-m: 24px;
     --heading-font-size-s: 20px;
@@ -788,7 +818,7 @@ main .section.bg-light {
     --body-font-size-m: 16px;
     --body-font-size-s: 14px;
     --body-font-size-xs: 12px;
-    
+
     --heading-font-size-xxl: 32px;
     --heading-font-size-xl: 28px;
     --heading-font-size-l: 24px;
@@ -821,8 +851,171 @@ table {
 }
 
 /* Ensure proper box sizing */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 /* Responsive styles- end */
+
+/*common button css*/
+/* Button styling within */
+/*common button css*/
+/* Button styling within */
+.cta-button a.button {
+  display: inline-block;
+  padding: 12px 24px !important;
+  margin: 10px 5px;
+  background-color: var(--main-accent-color) !important;
+  color: var(--text-light) !important;
+  text-decoration: none;
+  border: 2px solid var(--main-accent-color) !important;
+  border-radius: 4px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.cta-button a.button::after {
+  content: "\f105";
+  font-family: 'Font Awesome 5 Solid';
+  color: var(--text-light) !important;
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-button a.button:hover {
+  background-color: transparent !important;
+  color: var(--main-accent-color) !important;
+  border-color: var(--main-accent-color) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.cta-button a.button:hover::after {
+  color: var(--main-accent-color) !important;
+  transform: translateX(2px);
+}
+
+.cta-button a.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button a.button:active::after {
+  transform: translateX(0);
+}
+
+/* Secondary button variant */
+.cta-button-secondary a.button {
+  display: inline-block;
+  padding: 12px 24px !important;
+  margin: 10px 5px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: translateY(-1px);
+  background-color: transparent;
+  color: var(--main-accent-color) !important;
+  border: 2px solid var(--main-accent-color) !important;
+  border-color: var(--main-accent-color) !important;
+
+}
+
+.cta-button-secondary a.button::after {
+
+  content: "\f105";
+  font-family: 'Font Awesome 5 Solid';
+  color: var(--main-accent-color) !important;
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-button-secondary a.button:hover {
+  background-color: var(--main-accent-color) !important;
+  color: var(--text-light) !important;
+
+  text-decoration: none;
+  ;
+}
+
+.cta-button-secondary a.button:hover::after {
+  color: var(--text-dark) !important;
+  transform: translateX(2px);
+}
+
+/* Button focus state for accessibility 
+ .button-container.cta-button a.button:focus {
+  outline: 2px solid var(--main-accent-color);
+  outline-offset: 2px;
+}
+*/
+
+/*dark mode*/
+.cta-button-dark a.button {
+  display: inline-block;
+  padding: 12px 24px !important;
+  margin: 10px 5px;
+  background-color: var(--text-light) !important;
+  color: var(--dark-color) !important;
+  text-decoration: none;
+  border: 2px solid var(--dark-color) !important;
+  border-radius: 4px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.cta-button-dark a.button::after {
+  content: "\f105";
+  font-family: 'Font Awesome 5 Solid';
+  color: var(--dark-color) !important;
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-button-dark a.button:hover {
+  background-color: var(--dark-color) !important;
+  color: var(--text-light) !important;
+  border-color: var(--dark-color) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.cta-button-dark a.button:hover::after {
+  color: var(--text-light) !important;
+  transform: translateX(2px);
+}
+
+.cta-button-dark a.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-dark a.button:active::after {
+  transform: translateX(0);
+}
