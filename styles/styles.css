@@ -31,7 +31,7 @@
   --text-disabled:rgb(113, 113, 113);
   --link-color: var(--brand-link-color, #131313);
   --link-hover-color: var(--brand-link-hover-color, #ffc719);
-  --main-accent-color: var(--brand-theme-color, #ffc7ff);
+  --main-accent-color: var(--brand-theme-color, #ffc719);
   --dark-color-opacity: rgba(0, 0, 0, 0.55);
   --light-color-opacity: rgba(255, 255, 255, 0.5);
 
